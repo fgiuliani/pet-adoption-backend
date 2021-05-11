@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pets",
+  "info": {
+    "name": "pet",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "animal": {
+      "type": "enumeration",
+      "enum": [
+        "Cat",
+        "Dog",
+        "Bird"
+      ]
+    },
+    "breed": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "age": {
+      "type": "integer"
+    },
+    "sex": {
+      "type": "enumeration",
+      "enum": [
+        "Male",
+        "Female"
+      ]
+    }
+  }
+}
